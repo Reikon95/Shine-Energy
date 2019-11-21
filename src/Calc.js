@@ -12,7 +12,6 @@ function cleanGas(gas) {
     return 11000 - gas;
 }
 
-let fixedGas = cleanGas(gas);
 
 let message = ". Thank you for choosing Shine Energy!"
 

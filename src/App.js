@@ -13,7 +13,7 @@ function App() {
         <input type="text"></input>
         Please enter your electricity reading:
         <input type="text"></input>
-        <button>Calculate my Bill</button>
+        <button onClick={Calculator}>Calculate my Bill</button>
     </div>
   );
 }
