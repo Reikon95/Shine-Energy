@@ -12,9 +12,9 @@ function Intro() {
   
           <img src={shine} alt="our logo"/>
           Please enter your gas reading:
-          <input type="text" className="gas"></input>
+          <input type="number" className="gas"></input>
           Please enter your electricity reading:
-          <input type="text" className="electricity"></input>
+          <input type="number" className="electricity"></input>
           <button onClick={handleClick}>Calculate my Bill</button>
       </div>
     ) :  (
