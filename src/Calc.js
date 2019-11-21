@@ -1,4 +1,4 @@
-function Calculator(gas, electricity) {
+function Calculator({gas, electricity}) {
     return (gas < 101 && electricity < 101) ? 
         `Gas bill amount is ${normaliseCost(gas)}, electricity bill is ${normaliseCost(electricity)}${message}` :
         (gas < 101 && electricity > 100) ?
