@@ -14,6 +14,12 @@ function Calculator(gas, electricity) {
         `Gas bill amount is ${normaliseCost(complexBill(gas))}, electricity is ${normaliseCost(complexBill(electricity))}`
 }
 
+function cleanGas(gas) {
+    return 11000 - gas;
+}
+
+let fixedGas = cleanGas(gas);
+
 
 
 function normaliseCost(number) {
