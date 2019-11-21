@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import Intro from './Intro.js'
+import Logo from './Logo/Logo';
+import Welcome from './Welcome/Welcome';
+import Form from './Form/Form';
 
 function App() {
   return (
     <div className="App">
-        <Intro/>
+      <Logo />
+      <Welcome userName={'Graham'} />
+      <Form />
     </div>
   );
 }
