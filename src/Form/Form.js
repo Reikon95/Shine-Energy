@@ -5,8 +5,8 @@ import Results from '../Results/Calc';
 export default function Form(props) {
 
     let [clicked, setClicked] = useState(false)
-    let [gasVal, setGasVal] = useState(0);
-    let [leccyVal, setLeccyVal] = useState(0);
+    let [gasVal, setGasVal] = useState(11000);
+    let [leccyVal, setLeccyVal] = useState(11000);
 
     function handleClick() {
         setClicked(true);
@@ -39,7 +39,7 @@ export default function Form(props) {
 
         </>) : (
             <>
-                <Results gas={gasVal - 11000} electricity={leccyVal} />
+                <Results gas={gasVal} electricity={leccyVal} />
             </>
         )
 }
