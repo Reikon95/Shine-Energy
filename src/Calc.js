@@ -24,3 +24,4 @@ function complexBill(number) {
     return ((number - 100) * 20) + 100;
 }
 
+export default Calculator

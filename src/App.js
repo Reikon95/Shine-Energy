@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import shine from './energy.svg';
+import Calculator from './Calc.js'
 
 function App() {
   return (
