@@ -19,7 +19,7 @@ function Intro() {
       </div>
     ) :  (
             <>
-            <Calculator gas={12} electricity={24}/>
+            <Calculator gas={1} electricity={1}/>
             
             </>
     )
