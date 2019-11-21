@@ -6,8 +6,13 @@ function App() {
   return (
     <div className="App">
         <h1>Shine Energy</h1>
-        
+
         <img src={shine} alt="our logo"/>
+        Please enter your gas reading:
+        <input type="text"></input>
+        Please enter your electricity reading:
+        <input type="text"></input>
+        <button>Calculate my Bill</button>
     </div>
   );
 }
