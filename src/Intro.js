@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Calculator from './Calc.js'
 import shine from './energy.svg';
-
-
 function Intro() {
     let [clicked, setClicked] = useState(false);
     function handleClick() {
@@ -20,7 +18,7 @@ function Intro() {
           <button onClick={handleClick()}>Calculate my Bill</button>
       </div>
     ) :  (
-        <Calculator/>
+            <Calculator/>
     )
   }
 
