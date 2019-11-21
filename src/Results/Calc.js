@@ -3,18 +3,26 @@ import './CalcStyle.css';
 import '../Form/Form';
 
 function Calculator({ gas, electricity }) {
-    return (cleanGas(gas) < 101 && electricity < 101) ?
-        <h2>Your gas bill is {normaliseCost(gas)}. Your electricity bill is {normaliseCost(electricity)}{message}</h2> :
-        (cleanGas(gas) < 101 && electricity > 100) ?
-            <h2>Your gas bill is {normaliseCost(gas)}. Your electricity bill is {normaliseCost(complexBill(electricity))}{message}</h2> :
-            (cleanGas(gas) > 100 && electricity < 101) ?
-                <h2>Your electricity bill is {normaliseCost(electricity)}. Your gas bill is {normaliseCost(complexBill(gas))}{message}</h2> :
-                <h2>Your gas bill is {normaliseCost(complexBill(gas))}, your electricity bill is {normaliseCost(complexBill(electricity))}{message}</h2>
+    return (
+        gas < 101 && electricity < 101) ?
+        <div className='output'>
+            Your gas bill is {normaliseCost(gas)}.<br />
+            Your electricity bill is {normaliseCost(electricity)}{message}
+        </div> :
+        (gas < 101 && electricity > 100) ?
+            <div className='output'>
+                Your gas bill is {normaliseCost(gas)}. <br />Your electricity bill is {normaliseCost(complexBill(electricity))}{message}</div> :
+            (gas > 100 && electricity < 101) ?
+                <div className='output'>
+                    <br /> Your electricity bill is {normaliseCost(electricity)}. Your gas bill is {normaliseCost(complexBill(gas))}{message}</div> :
+                <div className='output'>
+                    <br /> Your gas bill is {normaliseCost(complexBill(gas))}, your electricity bill is {normaliseCost(complexBill(electricity))}<br />{message}
+                </div>
 }
 
-function cleanGas(gas) {
-    return 11000 - gas;
-}
+
+
+
 
 let message = ". Thank you for choosing Shine Energy!"
 

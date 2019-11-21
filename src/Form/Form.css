@@ -1,3 +1,7 @@
+#welcome {
+    padding-top: 5%;
+}
+
 .inputForm {
     padding-left: 20%;
     padding-right: 20%;
@@ -38,8 +42,9 @@
     background: #282c34 !important;
 }
 
-/* @media only screen and (max-width: 600px) {
-    #submitButton {
-        font-size: 1em;
-    }
-} */
+#monkey {
+    height: auto;
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -3,3 +3,9 @@
     padding: 5px;
     margin: 20px;
 }
+
+.output {
+    flex-direction: column;
+    font-family: 'Montserrat';
+    word-wrap: break-word;
+}
