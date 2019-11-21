@@ -1,0 +1,26 @@
+#logo {
+    width: 70px;
+    height: 70px;
+    padding-left: 20px;
+}
+
+
+#logoHeader {
+    background: #161032;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.itemLogo {
+    padding-top: 20px;
+    padding-left: 12px;
+}
+
+#logoItem {
+    padding-top: 20px;
+    padding-left: 12px;
+}
+
+#logoName {
+    color: #FFD07D;
+}
