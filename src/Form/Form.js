@@ -29,12 +29,9 @@ export default function Form(props) {
 
                 <label for="electricity" className="inputItem">Please enter your electricity reading:</label>
                 <input type="number" className="inputItem inputBox electricity" placeholder="00000" onChange={event => handleGasChange(event)} />
-                <button
-                    onClick={handleClick}
-                    value="Calculate my bill"
-                    className="inputItem"
-                    id="submitButton">
-                    <h2>Calculate my bill</h2></button>
+                <button onClick={handleClick} id="submitButton">
+                    <h2>Calculate my bill</h2>
+                </button>
             </form>
 
         </>) : (
