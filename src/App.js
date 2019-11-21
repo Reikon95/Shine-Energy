@@ -2,18 +2,12 @@ import React from 'react';
 import './App.css';
 import shine from './energy.svg';
 import Calculator from './Calc.js'
+import Intro from './Intro.js'
 
 function App() {
   return (
     <div className="App">
-        <h1>Shine Energy</h1>
-
-        <img src={shine} alt="our logo"/>
-        Please enter your gas reading:
-        <input type="text"></input>
-        Please enter your electricity reading:
-        <input type="text"></input>
-        <button onClick={Calculator}>Calculate my Bill</button>
+        <Intro/>
     </div>
   );
 }

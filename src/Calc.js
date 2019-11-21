@@ -6,7 +6,8 @@ function Calculator(gas, electricity) {
         (gas > 100 && electricity < 101) ?
         `Electricity bill amount is ${normaliseCost(electricity)}, gas amount is ${normaliseCost(complexBill(gas))}${message}` :
         `Gas bill amount is ${normaliseCost(complexBill(gas))}, electricity is ${normaliseCost(complexBill(electricity))}${message}`
-}
+        
+    }
 
 function cleanGas(gas) {
     return 11000 - gas;
