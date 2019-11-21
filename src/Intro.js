@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Calculator from './Calc.js'
+import Results from './Calc.js'
 import shine from './energy.svg';
 function Intro() {
   let [clicked, setClicked] = useState(false)
@@ -19,7 +19,7 @@ function Intro() {
       </div>
     ) :  (
             <>
-            <Calculator gas={12000} electricity={1124}/>
+            <Results gas={10} electricity={10}/>
             
             </>
     )
